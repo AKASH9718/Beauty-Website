@@ -8,6 +8,7 @@
 
 body {
   font-family: 'Montserrat', sans-serif;
+  background-color: lavender;
 }
 
 .container {
@@ -86,21 +87,24 @@ body {
   height: auto;
   width: 100%;
   position: relative;
-  display: inline;
+  display: flex;
   cursor: pointer;
   border-radius: 8px;
 }
 
 .slide > img {
   cursor: pointer;
-  border-radius: 14px;
+  border-radius: 17px;
   padding: 10px;
-  width: 382px;
+  width: 402px;
+  opacity: 0.8;
+  object-fit: cover;
   height: 232px;
 }
 
 .slide > img:hover {
   transform: scale(1.1);
+  opacity: 1;
   filter: drop-shadow(0 0 10px #333);
 }
 
@@ -109,8 +113,8 @@ body {
   display: flex;
   color: white;
   justify-content: center;
-  bottom: 0.8rem;
-  left: 0.7rem;
+  bottom: 1rem;
+  left: 1rem;
 }
 
 .summer-beauty {
@@ -125,12 +129,15 @@ body {
   width: 252px;
   height: 212px;
   object-fit: cover;
+  cursor:pointer;
   border-radius: 8px;
+  opacity: 0.7;
   transition: transform 0.2s ease-in-out;
 }
 
 .summer-beauty > img:hover {
   transform: scale(1.1);
+  opacity: 1;
   filter: drop-shadow(0 0 10px #333);
 }
 
